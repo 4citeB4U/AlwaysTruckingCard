@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anthony - Always Trucking & Loading LLC</title>
+    <meta name="description" content="Digital business card for Anthony, Owner/Instructor at Always Trucking & Loading LLC - Trucking and CDL Training in Milwaukee, WI">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="business-card">
+        <div class="card-front">
+            <!-- Logo Section -->
+            <div class="logo-section">
+                <img src="ethx22k149.png" alt="Always Trucking & Loading LLC Logo" class="logo">
+            </div>
+            
+            <!-- Contact Info Section -->
+            <div class="contact-section">
+                <div class="services-bar">
+                    <span class="service-badge">CDL Training</span>
+                    <span class="service-badge">Trucking</span>
+                    <span class="service-badge">Logistics</span>
+                </div>
+                
+                <div class="contact-details">
+                    <a href="tel:4149827034" class="contact-item phone">
+                        <i class="fas fa-phone"></i>
+                        <span>(414) 982-7034</span>
+                    </a>
+                    <a href="mailto:Anthony@alwaystruckingandloading.com" class="contact-item email">
+                        <i class="fas fa-envelope"></i>
+                        <span>Anthony@alwaystruckingandloading.com</span>
+                    </a>
+                    <a href="https://maps.google.com/?q=Milwaukee,WI" target="_blank" class="contact-item location">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Milwaukee, WI</span>
+                    </a>
+                    <a href="http://alwaystruckingandloading.com" target="_blank" class="contact-item website">
+                        <i class="fas fa-globe"></i>
+                        <span>alwaystruckingandloading.com</span>
+                    </a>
+                </div>
+                
+                <div class="social-media">
+                    <a href="#" class="social-icon" aria-label="Facebook">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="#" class="social-icon" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="#" class="social-icon" aria-label="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="#" class="social-icon" aria-label="YouTube">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                </div>
+                
+                <div class="action-buttons">
+                    <button class="btn-share" onclick="shareCard()">
+                        <i class="fas fa-share-alt"></i> Share Card
+                    </button>
+                    <button class="btn-save" onclick="downloadVCard()">
+                        <i class="fas fa-download"></i> Save Contact
+                    </button>
+                </div>
+                
+                <button class="btn-website" onclick="window.open('http://alwaystruckingandloading.com', '_blank')">
+                    <i class="fas fa-external-link-alt"></i> Visit Our Website
+                </button>
+                
+                <button class="btn-qr" onclick="toggleQRCode()">
+                    <i class="fas fa-qrcode"></i> Show QR Code
+                </button>
+            </div>
+        </div>
+        
+        <!-- QR Code Overlay -->
+        <div id="qr-overlay" class="hidden">
+            <div class="qr-container">
+                <button class="close-qr" onclick="toggleQRCode()">×</button>
+                <h3>Scan to save contact</h3>
+                <div id="qrcode"></div>
+                <p>Scan with your phone camera</p>
+            </div>
+        </div>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/qrcode.js/qrcode.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/agent-lee.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</body>
+</html>
